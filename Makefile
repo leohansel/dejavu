@@ -1,3 +1,6 @@
+install:
+	sudo apt-get install python-pyaudio python3-pyaudio
+
 env:
 	pyenv local 3.7.0
 	virtualenv --python=python3.7 venv && source venv/bin/activate
