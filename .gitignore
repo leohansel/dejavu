@@ -5,5 +5,5 @@ mp3
 *.mp3
 .DS_Store
 *.cnf
-venv
+.venv
 .python-version
