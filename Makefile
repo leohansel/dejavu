@@ -12,4 +12,7 @@ package:
 	python setup.py bdist_wheel
 	python setup.py clean --all bdist_wheel
 
+clean:
+	rm -rf build dist PyDejavu.egg-info
+
 build: install environment package
