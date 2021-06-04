@@ -5,7 +5,7 @@ install:
 	sudo apt-get -y install --no-install-recommends python-virtualenv python3-distutils python3-pyaudio ffmpeg
 	sudo apt-get install docker-compose
 
-env:
+setup:
 	pyenv local 3.7.0
 	virtualenv --python=python3.7 .venv && source .venv/bin/activate
 	python -m pip install -U pip wheel setuptools
@@ -20,6 +20,6 @@ copy:
 clean:
 	rm -rf build dist PyDejavu.egg-info
 
-environment: install env
+environment: install setup
 
 build: package copy clean
