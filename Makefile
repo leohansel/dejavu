@@ -1,4 +1,6 @@
 install:
+	curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+	exec $SHELL
 	sudo apt-get update
 	sudo apt-get -y install --no-install-recommends python-virtualenv python3-distutils python3-pyaudio ffmpeg
 	sudo apt-get install docker-compose
